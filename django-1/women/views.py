@@ -7,3 +7,6 @@ from django.shortcuts import render
 
 def index(request):
     return HttpResponse("Страница приложение Women")
+
+def categories(request, cat_slug):
+    return HttpResponse(f"Страница: {cat_slug}")
